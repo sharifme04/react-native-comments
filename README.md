@@ -1,4 +1,5 @@
 run json server by:    npx json-server --watch db.json
+ yarn run postinstall
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
