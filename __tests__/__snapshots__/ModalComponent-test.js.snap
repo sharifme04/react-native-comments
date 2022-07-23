@@ -1,0 +1,505 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalComponent  1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  propagateSwipe={true}
+  scrollOffset={1}
+  scrollTo={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(0,0,0,0.7)",
+      "padding": 40,
+    }
+  }
+  transparent={true}
+  visible={true}
+>
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,0.7)",
+            "padding": 40,
+          }
+        }
+      >
+        <Text
+          onPress={[Function]}
+          style={
+            Object {
+              "alignSelf": "flex-end",
+              "borderColor": "#fff",
+              "color": "#fff",
+              "fontSize": 15,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Close
+        </Text>
+        <Image
+          source={
+            Object {
+              "uri": undefined,
+            }
+          }
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "height": 800,
+              "width": null,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 0.1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": "#900",
+                "fontSize": 30,
+              },
+              undefined,
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "marginLeft": 9,
+              "marginTop": -60,
+              "minHeight": 40,
+            }
+          }
+        >
+          <TextInput
+            onChangeText={[Function]}
+            placeholder="Comment here ..."
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "borderColor": "#fff",
+                "borderWidth": 1,
+                "marginHorizontal": 0,
+                "padding": 10,
+                "width": "70%",
+              }
+            }
+            value=""
+          />
+          <View
+            accessibilityRole="button"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#007AFF",
+                      "fontSize": 18,
+                      "margin": 8,
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                Post
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</Modal>
+`;
+
+exports[`ModalComponent empty images  1`] = `
+Array [
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    propagateSwipe={true}
+    scrollOffset={1}
+    scrollTo={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,0.7)",
+        "padding": 40,
+      }
+    }
+    transparent={true}
+    visible={true}
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        Object {
+          "flexGrow": 1,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "rgba(0,0,0,0.7)",
+              "padding": 40,
+            }
+          }
+        >
+          <Text
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "borderColor": "#fff",
+                "color": "#fff",
+                "fontSize": 15,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Close
+          </Text>
+          <Image
+            source={
+              Object {
+                "uri": "",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "height": 800,
+                "width": null,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 0.1,
+              "flexDirection": "column",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": "#900",
+                  "fontSize": 30,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "FontAwesome",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginLeft": 9,
+                "marginTop": -60,
+                "minHeight": 40,
+              }
+            }
+          >
+            <TextInput
+              onChangeText={[Function]}
+              placeholder="Comment here ..."
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderColor": "#fff",
+                  "borderWidth": 1,
+                  "marginHorizontal": 0,
+                  "padding": 10,
+                  "width": "70%",
+                }
+              }
+              value=""
+            />
+            <View
+              accessibilityRole="button"
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {},
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#007AFF",
+                        "fontSize": 18,
+                        "margin": 8,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  Post
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </Modal>,
+  ",",
+]
+`;
+
+exports[`ModalComponent with images  1`] = `
+Array [
+  <Modal
+    animationType="fade"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    propagateSwipe={true}
+    scrollOffset={1}
+    scrollTo={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,0.7)",
+        "padding": 40,
+      }
+    }
+    transparent={true}
+    visible={true}
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        Object {
+          "flexGrow": 1,
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "rgba(0,0,0,0.7)",
+              "padding": 40,
+            }
+          }
+        >
+          <Text
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "borderColor": "#fff",
+                "color": "#fff",
+                "fontSize": 15,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Close
+          </Text>
+          <Image
+            source={
+              Object {
+                "uri": "https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "height": 800,
+                "width": null,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 0.1,
+              "flexDirection": "column",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": "#900",
+                  "fontSize": 30,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "FontAwesome",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "marginLeft": 9,
+                "marginTop": -60,
+                "minHeight": 40,
+              }
+            }
+          >
+            <TextInput
+              onChangeText={[Function]}
+              placeholder="Comment here ..."
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderColor": "#fff",
+                  "borderWidth": 1,
+                  "marginHorizontal": 0,
+                  "padding": 10,
+                  "width": "70%",
+                }
+              }
+              value=""
+            />
+            <View
+              accessibilityRole="button"
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {},
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#007AFF",
+                        "fontSize": 18,
+                        "margin": 8,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  Post
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </Modal>,
+  ",",
+]
+`;
