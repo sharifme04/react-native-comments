@@ -15,8 +15,8 @@ There  is a patch package for `node_modules/react-native/jest/setup.js` file for
 so apply patch by  `npm run postinstall` (make sure the patch is working properly otherwise testing will be failed)
 
  
-For comment implementation,  i have used local fake api `json-server`
-### so run `json server` by:   
+For comment implementation,  i have used local fake api `json-server`.From the repository directory run run `json server` by
+   
 
 ### `npx json-server --watch db.json`
  
