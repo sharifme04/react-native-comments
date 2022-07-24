@@ -1,5 +1,4 @@
 import { ADD_COMMENT, DELETE_COMMENT, FETCH_COMMENTS, UPDATE_COMMENT} from '../actionType/comment';
-import {devEnvVariable} from '../config/env';
 
 export const addComment = (comment) => ({
     type: ADD_COMMENT,

@@ -9,16 +9,6 @@ const apiMiddleware = (store) => (next) => (action) => {
   const apiURL = url ;
   const API_KEY = devEnvVariable.API_KEY;
 
-   console.log('parameters 12', parameters);
-   console.log('apiUR 13',apiURL);
-   console.log('body 14 line', body);
-
-/*   const defaultHeaders = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
-    access_token: access_token || 'FATAL'
-  }; */
-
   const defaultHeaders = {
       Authorization: API_KEY //`563492ad6f91700001000001d23db4a4e8de40528fc284bfb7258584`,
   }

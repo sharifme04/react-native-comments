@@ -1,10 +1,10 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
+import PropTypes from "prop-types";
+import {ScrollView, View} from 'react-native';
 import ImageElement from '../../components/ImageElement';
 import styles from './ImageGalleryStyle';
 
-const ImageGalleryScreen = ({images, handleVisible, handleImage}) => {
-  //console.log('ImageGalleryScreen  11', images);
+const ImageGalleryScreen = ({images, handleVisible,totalComments, handleImage}) => {
   const imagesList = images?.map(e => (
     <ImageElement
       key={e.id}
@@ -12,6 +12,7 @@ const ImageGalleryScreen = ({images, handleVisible, handleImage}) => {
       id={e.id}
       handleVisible={handleVisible}
       handleImage={handleImage}
+      totalComments={totalComments}
     />
   ));
 
@@ -27,6 +28,13 @@ const ImageGalleryScreen = ({images, handleVisible, handleImage}) => {
       </ScrollView>
     </View>
   );
+};
+
+ImageGalleryScreen.propTypes = {
+  images: PropTypes.array,
+  handleImage: PropTypes.func,
+  handleVisible:PropTypes.func,
+  totalComments: PropTypes.array
 };
 
 export default ImageGalleryScreen;

@@ -4,7 +4,6 @@
 
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import axios from 'axios';
 import {useDispatch, useSelector} from 'react-redux';
 
 import ImageGalleryScreen from './app/screens/ImagesGallery/ImageGalleryScreen';
@@ -18,9 +17,7 @@ const App = () => {
   const [modalImage, setModalImage] = useState(null);
   const [modalImageId, setModalImageId] = useState(null);
   const images = useSelector(state => state.imagesReducer?.images);
-  const commentsReducer = useSelector(state => state.commentsReducer);
-
-  //console.log('comments' ,commentsReducer?.comments); 
+  const totalComments = useSelector(state => state.commentsReducer?.comments);
 
   useEffect(() => {
     dispatch(getImages());
@@ -45,6 +42,7 @@ const App = () => {
         images={images?.photos}
         handleVisible={handleVisible}
         handleImage={handleImage}
+        totalComments={totalComments}
       />
     </SafeAreaView>
   );

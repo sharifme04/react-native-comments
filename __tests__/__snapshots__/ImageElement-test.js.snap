@@ -13,6 +13,8 @@ exports[`ImageElement  1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "borderColor": "thistle",
+      "borderWidth": 1,
       "height": 325.5,
       "margin": 2,
       "padding": 2,
@@ -34,6 +36,35 @@ exports[`ImageElement  1`] = `
       }
     }
   />
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#900",
+            "fontSize": 15,
+          },
+          undefined,
+          Object {
+            "fontFamily": "FontAwesome",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
 </View>
 `;
 
@@ -50,6 +81,8 @@ exports[`ImageElement empty images  1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "borderColor": "thistle",
+      "borderWidth": 1,
       "height": 325.5,
       "margin": 2,
       "padding": 2,
@@ -71,6 +104,35 @@ exports[`ImageElement empty images  1`] = `
       }
     }
   />
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#900",
+            "fontSize": 15,
+          },
+          undefined,
+          Object {
+            "fontFamily": "FontAwesome",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
 </View>
 `;
 
@@ -87,6 +149,8 @@ exports[`ImageElement with images  1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "borderColor": "thistle",
+      "borderWidth": 1,
       "height": 325.5,
       "margin": 2,
       "padding": 2,
@@ -108,5 +172,34 @@ exports[`ImageElement with images  1`] = `
       }
     }
   />
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      selectable={false}
+      style={
+        Array [
+          Object {
+            "color": "#900",
+            "fontSize": 15,
+          },
+          undefined,
+          Object {
+            "fontFamily": "FontAwesome",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
 </View>
 `;

@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import {
   StyleSheet,
   Platform,
@@ -9,10 +9,10 @@ import {
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import PropTypes from "prop-types";
 import {addComment, deleteComment, updateComment} from '../actions/comment';
 
 const UserComments = ({id}) => {
- // const InputRef = useRef();
   const dispatch = useDispatch();
 
   const [Comments, setComments] = useState([]);
@@ -22,7 +22,6 @@ const UserComments = ({id}) => {
   const [isUpdate, setIsUpdate] = useState(false);
 
   const addedcomments = useSelector(state => state.commentsReducer?.comments);
-  //console.log('addedcomments', addedcomments);
 
   const AddToComments = () => {
     let temp = {
@@ -31,9 +30,7 @@ const UserComments = ({id}) => {
       imageId: id,
     };
     setComments([...Comments, temp]); // Adds comment to Array
-    //InputRef.current.clear(); // This clears the TextInput Field
     setCommentValue('');
-    // console.log('temp line 19', temp);
     dispatch(addComment(temp));
     setIsUpdate(false);
   };
@@ -59,19 +56,14 @@ const UserComments = ({id}) => {
     setCommentValue('');
     setIsUpdate(false);
   };
-  //console.log('commentValue 60', commentValue);
-  //console.log('commentObj',commentObj);
   return (
     <View style={styles.container}>
-      <Icon name="comment" size={30} color="#900" />
-
       <View style={styles.comment_container}>
         <TextInput
           style={styles.input_txt}
           onChangeText={text => setCommentValue(text)}
           placeholder="Comment here ..."
           value={commentValue}
-          //ref={InputRef}
         />
         <Button
           title={isUpdate ? 'Update' : 'Post'}
@@ -82,13 +74,16 @@ const UserComments = ({id}) => {
       {addedcomments
         ?.filter(c => c.imageId === id)
         .map(c => {
-         // console.log('c.comment', c.comment);
           return (
             <View style={styles.showComment_container} key={c.commentId}>
+              <Icon name="comment" size={15} color="#900"style={styles.commentIcon} />
+              <Text style={styles.text}>{c.comment}</Text>
+              <View style={styles.custom}>
               <Icon
                 name="edit"
                 size={15}
                 color="#000"
+                style={styles.text}
                 onPress={() => {
                   setCommentValue(c.comment.toString());
                   setCommentObj(c);
@@ -102,15 +97,13 @@ const UserComments = ({id}) => {
                 color="#000"
                 onPress={() => deletToComment(c.id)}
               />
-                <Text style={styles.text} >{c.comment}</Text>
+              </View>
             </View>
           );
         })}
     </View>
   );
 };
-
-export default UserComments;
 
 const styles = StyleSheet.create({
   container: {
@@ -123,8 +116,7 @@ const styles = StyleSheet.create({
     minHeight: 40,
     flexDirection: 'row',
     marginTop: -60,
-    marginLeft: Platform.OS === 'ios' ? 9 : null,
-    // marginBottom: 40,
+    marginLeft: Platform.OS === 'ios' ? 9 : null
   },
   input_txt: {
     width: '70%',
@@ -135,16 +127,33 @@ const styles = StyleSheet.create({
     marginHorizontal: 0,
   },
   showComment_container: {
-    width: '60%',
-  //  minHeight: 30,
-  //paddingHorizontal: 20,
-  paddingVertical: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#fff',
+    width: '80%',
+    paddingVertical: 10,
     flexDirection: 'row',
-    backgroundColor: '#B0C4DE',
-    justifyContent: 'center',
+    backgroundColor: '#fff',
+    justifyContent: 'flex-start',
     marginTop: 10,
+    paddingLeft: 5,
   },
-  text:{
-    paddingLeft: 10,
+  text: {
+    padding: 5
+  },
+  custom: {
+    flexDirection: 'row',
+    marginLeft: 'auto',
+    padding: 5,
+  },
+  commentIcon: {
+    padding: 15
   }
 });
+
+
+UserComments.propTypes = {
+  id: PropTypes.any
+};
+
+export default UserComments;

@@ -1,5 +1,7 @@
-run json server by:    npx json-server --watch db.json
- yarn run postinstall
+run json server by:    `npx json-server --watch db.json`
+ `yarn run postinstall`
+
+ `arch -arch x86_64 pod install`
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

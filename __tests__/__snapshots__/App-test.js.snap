@@ -80,27 +80,6 @@ exports[`renderer snapshot 1`] = `
             }
           }
         >
-          <Text
-            allowFontScaling={false}
-            selectable={false}
-            style={
-              Array [
-                Object {
-                  "color": "#900",
-                  "fontSize": 30,
-                },
-                undefined,
-                Object {
-                  "fontFamily": "FontAwesome",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-                Object {},
-              ]
-            }
-          >
-            
-          </Text>
           <View
             style={
               Object {

@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import {StyleSheet, Text, View, Image, Modal, ScrollView} from 'react-native';
 import UserComments from './UserComments';
-//import Modal from "react-native-modal";
 
 const ModalComponent = ({modalVisible, modalImage, id, handleVisible}) => {
   return (
@@ -36,9 +36,7 @@ const ModalComponent = ({modalVisible, modalImage, id, handleVisible}) => {
 
 const styles = StyleSheet.create({
   modal: {
-    //flex: 1,
     padding: 40,
-    //minHeight: 600,
     backgroundColor: 'rgba(0,0,0,0.7)',
   },
   imageContainer: {
@@ -46,7 +44,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image: {
-    // flex: 1,
     width: null,
     height: 800,
     alignSelf: 'stretch',
@@ -66,4 +63,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+ModalComponent.propTypes = {
+  modalVisible: PropTypes.bool,
+  modalImage: PropTypes.string,
+  id: PropTypes.any,
+  handleVisible: PropTypes.func
+};
+
 export default ModalComponent;

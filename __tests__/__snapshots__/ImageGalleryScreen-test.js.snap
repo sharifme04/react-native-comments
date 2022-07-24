@@ -68,6 +68,8 @@ exports[`ImageGalleryScreen with images  1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "borderColor": "thistle",
+            "borderWidth": 1,
             "height": 325.5,
             "margin": 2,
             "padding": 2,
@@ -89,6 +91,35 @@ exports[`ImageGalleryScreen with images  1`] = `
             }
           }
         />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": "#900",
+                  "fontSize": 15,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "FontAwesome",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
       </View>
       <View
         accessible={true}
@@ -102,6 +133,8 @@ exports[`ImageGalleryScreen with images  1`] = `
         onStartShouldSetResponder={[Function]}
         style={
           Object {
+            "borderColor": "thistle",
+            "borderWidth": 1,
             "height": 325.5,
             "margin": 2,
             "padding": 2,
@@ -123,6 +156,35 @@ exports[`ImageGalleryScreen with images  1`] = `
             }
           }
         />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              Array [
+                Object {
+                  "color": "#900",
+                  "fontSize": 15,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "FontAwesome",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
       </View>
     </View>
   </RCTScrollView>

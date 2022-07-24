@@ -19,7 +19,6 @@ const initialState = {
 };
 
 export default function commentsReducer(state = initialState, action) {
-  //console.log('action 13 reducer', action);
   switch (action.type) {
     case FETCH_COMMENTS_PENDING:
       return {
@@ -49,7 +48,6 @@ export default function commentsReducer(state = initialState, action) {
         isLoading: true,
       };
     case ADD_COMMENT_SUCCESS:
-      //console.log('action 48 line',action);
       const comment = action?.response;
       return {
         ...state,
@@ -69,8 +67,6 @@ export default function commentsReducer(state = initialState, action) {
         isLoading: true,
       };
     case DELETE_COMMENT_SUCCESS:
-      console.log('state.comments', state.comments);
-      console.log('action', action);
       return {
         ...state,
         comments: state.comments.filter(comment => comment.id !== action.id),
